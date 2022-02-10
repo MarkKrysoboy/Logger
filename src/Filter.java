@@ -13,13 +13,13 @@ public class Filter {
 //        return list.stream().filter(value -> value >= f).toList();
         List filterList = new ArrayList<>();
         int count = 0;
-        for (int x:list) {
-            if (x < f){
-                logger.log("Число " + x + " не проходит");
+        for (int x : list) {
+            if (x < f) {
+                logger.log("Число " + x + " не проходит.");
             } else {
                 filterList.add(x);
                 count++;
-                logger.log("Число " + x + " добавлено");
+                logger.log("Число " + x + " добавлено.");
             }
         }
         logger.log("Прошло фильтр " + count + " элементов из " + list.size());
